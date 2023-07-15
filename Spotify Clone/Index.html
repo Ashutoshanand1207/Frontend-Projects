@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Player Images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <!-- navigation bar -->
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <!-- playlist and podcast bar -->
+            <div class="library" style="background-color: #1f1e1e;">
+                <div class="option">                    
+                    <div class="lib-option nav-option">
+                        <img src="./Player Images/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box1">Create your first playlist</p>
+                        <p class="box2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <div class="box1">Let's find some podcast to follow</div>
+                        <p class="box2">We'll keep updated to new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- songs bar -->
+        <div class="main-content">
+            <!-- header -->
+            <div class="sticky-nav">
+                <div class="sticky-icons" style="background-color: #1f1e1e;">
+                    <img src="/Player Images/backward_icon.png" class="img" style="background-color: #1f1e1e;">
+                    <img src="/Player Images/forward_icon.png" class="hide img" style="background-color: #1f1e1e;">
+                </div>
+                <div class="sticky-badge" style="background-color: #1f1e1e;">
+                    <button class="badge nav-items">Explore Premium</button>
+                    <button class="badge nav-items dark-badge hide" ><i class="fa-sharp fa-regular fa-circle-down" style="margin-right: 0.25rem;"></i>Install App</button>
+                    <i class="fa-regular fa-user" style="background-color: #1f1e1e; margin-right: 1rem;"></i>
+                </div>                
+            </div>
+            <!-- recently played box -->
+            <h2 style="background-color: #1f1e1e;">Recently played</h2>
+            <div class="cards">
+                <div class="cards-container">                    
+                        <img src="/Player Images/card1img.jpeg" class="card-img">
+                        <p class="card-title" style="background-color: #2e2e2e;">Top 50 - Global</p>
+                        <p class="card-info" style="background-color: #2e2e2e;">Your daily update of the most played tracks...</p>
+                </div>
+            </div>
+            <!-- trending now box -->
+            <h2 style="background-color: #1f1e1e;">Trending now</h2>            
+                <div class="cards-container">
+                    <!-- card 1 -->
+                    <div class="cards">
+                        <img src="/Player Images/card2img.jpeg" class="card-img">
+                        <p class="card-title" style="background-color: #2e2e2e;">Mahiya Jinna Sohna</p>
+                        <p class="card-info" style="background-color: #2e2e2e;">Darshan Raval</p>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="cards">
+                        <img src="/Player Images/card3img.jpeg" class="card-img">
+                        <p class="card-title" style="background-color: #2e2e2e;">Mere Paas Tum Ho</p>
+                        <p class="card-info" style="background-color: #2e2e2e;">Silent Ocean</p>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="cards">
+                        <img src="/Player Images/card4img.jpeg" class="card-img">
+                        <p class="card-title" style="background-color: #2e2e2e;">Naa Ready (from"Leo")</p>
+                        <p class="card-info" style="background-color: #2e2e2e;">Anirudh Ravichander,Thalapathy...</p>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="cards">
+                        <img src="/Player Images/card5img.jpeg" class="card-img">
+                        <p class="card-title" style="background-color: #2e2e2e;">Top songs Global</p>
+                        <p class="card-info" style="background-color: #2e2e2e;">Daily update of the most played tracks...</p>
+                    </div>                    
+                </div>
+                <br>
+                <!-- workout zone box -->
+                <h2 style="background-color: #1f1e1e;">Workout zone</h2>            
+                <div class="cards-container">
+                    <!-- card 1 -->
+                    <div class="cards">
+                        <img src="/Player Images/img7.jpg" class="card-img">
+                        <p class="card-title" style="background-color: #2e2e2e;">2018 Workout Intensity Beat</p>
+                        <p class="card-info" style="background-color: #2e2e2e;">Intense Workout Music Series</p>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="cards">
+                        <img src="/Player Images/img8.jpg" class="card-img">
+                        <p class="card-title" style="background-color: #2e2e2e;">Workout Latino</p>
+                        <p class="card-info" style="background-color: #2e2e2e;">Ritmo latino!</p>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="cards">
+                        <img src="/Player Images/img9.jpg" class="card-img">
+                        <p class="card-title" style="background-color: #2e2e2e;">Workout Beats</p>
+                        <p class="card-info" style="background-color: #2e2e2e;">Playlist ny spotify</p>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="cards">
+                        <img src="/Player Images/img10.jpg" class="card-img">
+                        <p class="card-title" style="background-color: #2e2e2e;">Running UK</p>
+                        <p class="card-info" style="background-color: #2e2e2e;">Whether you're jogging around the block or training...</p>
+                    </div>                    
+                </div>
+                <br>
+            <!-- footer -->
+            <footer>
+                <hr>
+                <br><br><br>
+                <p>Spotify Clone 2023</p>
+                <br><br><br><br><br>
+            </footer>
+        </div>   
+        <!-- music player -->
+        <div class="music-player">
+            <div class="album">
+                <div class="song-img">
+                    <img src="/Icons/album_picture.jpeg">
+                </div>
+                <div class="name">
+                    <p class="song">Daylight</p>
+                    <p class="singer">David Kushnar</p>
+                </div>
+                <div class="icon1">
+                    <img src="/Icons/album_icon1.png">
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="/Player Images/player_icon1.png" class="control-icon">
+                    <img src="/Player Images/player_icon2.png" class="control-icon">
+                    <img src="/Player Images/player_icon3.png" class="control-icon" style="opacity: 1; height: 2.3rem;">
+                    <img src="/Player Images/player_icon4.png" class="control-icon">
+                    <img src="/Player Images/player_icon5.png" class="control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls" >
+                <div class="cont">
+                    <img src="/Icons/controls_icon1.png" class="cont-icon" style="height: 40px; width: 40px;">
+                    <img src="/Icons/controls_icon2.png" class="cont-icon" style="height: 40px; width: 40px;">
+                    <img src="/Icons/controls_icon3.png" class="cont-icon" style="height: 20px; width: 20px;">
+                    <img src="/Icons/controls_icon4.png" class="cont-icon" style="height: 20px; width: 20px;">
+                    <img src="/Icons/controls_icon5.png" class="cont-icon" style="height: 40px; width: 40px;">
+                    <input type="range" min="0" max="100" class="sound-bar">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
